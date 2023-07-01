@@ -1,0 +1,69 @@
+:root {
+    --color: rgb(162, 96, 201);
+    --link-color: black;
+}
+
+body {
+    margin: 0px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--link-color);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* individual elements in sidebar */
+nav ul li {
+    margin: 20px 50px 20px 0px;
+    font-size: 30px;
+}
+
+#blurb {
+    text-align: center;
+    font-size: 40px;
+}
+
+#pictures-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.picture {
+    width: 400px;
+    height: auto;
+    
+}
+
+#rights {
+    width: auto;
+    height: 16px;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+    background-color: var(--color);
+}
+
+/* TODO: fix vertical centering on rights text */
