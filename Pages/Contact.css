@@ -2,3 +2,13 @@
     width: 596px;
     height: 500px;
 }
+
+strong {
+    display: block;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    margin: 0px 0px 0px 0px;
+}
