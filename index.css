@@ -1,10 +1,7 @@
 :root {
     --color: rgb(162, 96, 201);
     --link-color: black;
-}
-
-body {
-    margin: 0px;
+    --picture-container-margin: 10px;
 }
 
 a {
@@ -30,7 +27,7 @@ a:visited {
 nav ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 /* individual elements in sidebar */
@@ -51,19 +48,25 @@ nav ul li {
     padding-bottom: 20px;
 }
 
+.picture-container {
+    position: relative;
+    text-align: center;
+    margin-left: var(--picture-container-margin);
+    margin-right: var(--picture-container-margin);
+}
+
 .picture {
     width: 400px;
     height: auto;
-    
 }
 
-#rights {
-    width: auto;
-    height: 16px;
-    padding: 20px;
-    margin: 0px;
-    text-align: center;
-    background-color: var(--color);
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
 }
-
-/* TODO: fix vertical centering on rights text */
