@@ -1,3 +1,3 @@
-# Bakery-Website
+# 4618 Bakery
 
-## Created to help a local business owner advertise his services
+## A website for a local restaurant owner

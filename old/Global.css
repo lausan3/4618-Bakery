@@ -1,0 +1,43 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.english-text {
+    font-weight: 200;
+}
+
+.chinese-text {
+    font-weight: 200;
+}
+
+#logo-pic {
+    width: 300px;
+    height: 145px;
+}
+
+.picture {
+    width: 400px;
+    height: auto;
+}
+
+/* Fade In Animation */
+
+.fade-in-text {
+    overflow: hidden;
+}
+  
+.fade-in-text {
+    animation: wipeFadeIn 0.7s forwards;
+    white-space: nowrap;
+}
+  
+@keyframes wipeFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-30%);
+}
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
