@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import './index.css'
 import Layout from './routes/Layout.tsx'
-import Home from './routes/Home.tsx'
+import Home from './routes/home.tsx'
 import Location from './routes/Location.tsx'
 import Showcase from './routes/Showcase.tsx'
 import Order from './routes/Order.tsx'
