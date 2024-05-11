@@ -4,7 +4,7 @@
 
 @layer components {
   .background-img {
-    @apply bg-main-background-img bg-no-repeat bg-center bg-cover opacity-80;
+    @apply bg-main-background-img bg-no-repeat bg-center bg-cover opacity-70;
   }
 
   .content-section {
@@ -12,7 +12,7 @@
   }
 
   .center-size {
-    @apply h-full min-w-[320px] max-w-[1160px];
+    @apply h-full min-w-[320px] max-w-[1160px] justify-center;
   }
 
   .link-underline::after {
@@ -23,7 +23,7 @@
     top: 0.2rem;
     transform: scaleY(0.6) scaleX(0) translateZ(0);
     /* transform-origin: left;  Changes where the animation starts from */
-    transition: transform 100ms ease-in-out;
+    transition: transform 175ms ease-in-out;
   }
 
   .link-underline:hover::after {
