@@ -8,10 +8,15 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'main-background-img': "url('./src/assets/background.JPG')",
+        'main-background-img': "url('/background.JPG')",
+      },
+      fontFamily: {
+        sans: ['Montserrat'],
+        'tc': ['Noto Sans TC'],
+        'zh': ['Noto Sans SC']
       },
       colors: {
-
+        'section-bg': "gray-500",
       }
     },
   },
