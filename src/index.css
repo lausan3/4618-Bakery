@@ -6,13 +6,9 @@
   .background-img {
     @apply bg-main-background-img bg-no-repeat bg-center bg-cover opacity-70;
   }
-
-  .content-section {
-    @apply w-full h-full bg-gray-400;
-  }
-
+  
   .center-size {
-    @apply h-full min-w-[320px] max-w-[1160px] justify-center;
+    @apply h-full min-w-0 max-w-[1160px] justify-center;
   }
 
   .link-underline::after {
@@ -29,4 +25,9 @@
   .link-underline:hover::after {
     transform: scaleX(1);
   }
+}
+
+#root {
+  margin: 0;
+  padding: 0;
 }

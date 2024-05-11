@@ -3,12 +3,10 @@ import Header from "../Components/Header"
 
 const Layout = () => {
   return (
-    <div className="flex flex-col w-screen h-screen items-center p-0">
+    <div className="flex flex-col w-full h-screen items-center">
       <Header />
-      <div className="flex w-full h-full justify-center">
-        {/* <section className="content-section center-size"> */}
-          <Outlet />
-        {/* </section> */}
+      <div className="flex w-full flex-grow justify-center">
+        <Outlet />
       </div>
     </div>
   )
