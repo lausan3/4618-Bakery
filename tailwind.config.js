@@ -7,9 +7,11 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'main-background-img': "url('./src/assets/background.JPG')",
+      },
       colors: {
 
-        primary: '#FFFFFF'
       }
     },
   },
