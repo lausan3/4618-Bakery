@@ -9,11 +9,16 @@ const Home = () => {
         max-sm:grid-rows-2 max-sm:grid-cols-1"
       >
         
-        <div id="show-stack" className="flex flex-col justify-center">
+        <div id="show-stack" className="
+          flex flex-col justify-center"
+        >
           <span className="text-center self-center text-3xl font-semibold">Custom-Made Cakes for any Occasion.</span>
           <span className="text-center self-center text-xl mt-3">We provide cakes made-to-order for your event</span>
         </div>
-        <img src="./IMG_0003.PNG" alt="Showcase Cake" className="w-3/4 px-5 py-5 mx-auto object-contain"/>
+        <img src="./IMG_0003.PNG" alt="Showcase Cake" className="
+          w-3/4 px-5 py-5 mx-auto object-contain
+          max-sm:mt-4"
+        />
       </div>
     </div>
   )
