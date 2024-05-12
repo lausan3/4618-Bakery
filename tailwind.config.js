@@ -16,7 +16,7 @@ export default {
         'zh': ['Noto Sans SC']
       },
       colors: {
-        'main-color': '#c084fc',
+        'main-color': '#07e342',
         'section-bg': "gray-500",
       }
     },
