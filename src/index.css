@@ -8,7 +8,7 @@
   }
   
   .center-size {
-    @apply h-full min-w-0 max-w-[1160px] justify-center;
+    @apply h-full min-w-0 max-w-[1160px];
   }
 
   .link-underline::after {
