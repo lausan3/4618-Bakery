@@ -8,7 +8,6 @@ const Home = () => {
         grid grid-rows-2 h-1/2 px-10 center-size
         sm:grid-cols-2 sm:grid-rows-1"
       >
-        
         <div id="show-stack" className="
           flex flex-col"
         >

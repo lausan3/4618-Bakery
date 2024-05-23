@@ -2,8 +2,9 @@ import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
-    <header className="flex flex-row justify-center w-full py-8 bg-main-color
-    shadow-2xl z-[2]
+    <header className="
+      flex flex-row justify-center w-full py-8 bg-main-color
+      shadow-2xl z-[2]
     ">
       <div className="
         flex flex-col items-center justify-between center-size
