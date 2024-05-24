@@ -6,7 +6,7 @@ const Footer = () => {
       flex flex-row justify-center w-full bg-main-color py-8
     ">
       <div id="grid" className="
-        grid grid-rows-2 w-1/4 h-[90%] gap-y-10
+        grid grid-rows-auto w-1/4 h-[90%] gap-y-10
         sm:grid-cols-2 sm:grid-rows-1
       ">
 
