@@ -55,7 +55,7 @@ const Home = () => {
       </div>
 
       <div id="carousel" className="
-        flex flex-col px-10 py-8 mt-10 bg-gray-300
+        flex flex-col  py-8 mt-10 bg-gray-300
         shadow-2xl z-[2]
         sm:center-size sm:min-w-full sm:h-fit
       ">
@@ -67,7 +67,7 @@ const Home = () => {
         <Carousel 
           className="mt-5 sm:mt-12"
           slideSize="30%" 
-          slideGap={isMobile ? -75 : "sm"}
+          slideGap="sm"
           slidesToScroll={2}
           align="start"
           withIndicators

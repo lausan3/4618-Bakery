@@ -3,11 +3,11 @@ import { Link } from "react-router-dom"
 const Header = () => {
   return (
     <header className="
-      flex flex-row justify-center w-full px-10 py-8 bg-main-color
+      flex flex-row justify-center items-center w-full px-10 py-8 bg-main-color
       shadow-2xl z-[2]
     ">
       <div className="
-        flex flex-col items-center gap-y-1
+        flex flex-col items-center gap-y-1 w-full px-10
         sm:flex-row sm:center-size"
       >
         <Link to="/" id="logo" className="flex flex-col items-center">
@@ -23,10 +23,11 @@ const Header = () => {
         <div className="w-96"></div>
 
         <div className="
-          flex flex-row px-5 my-2 gap-5"
+          flex flex-row px-5 my-2 gap-5 w-full
+          sm: justify-end"
         >
           <Link to="/location" className="text-xl link-underline">Location</Link>
-          <Link to="/showcase" className="text-xl link-underline">Showcase</Link>
+          <Link to="/gallery" className="text-xl link-underline">Gallery</Link>
           <Link to="/order" className="text-xl link-underline">Order</Link>
         </div>
       </div>

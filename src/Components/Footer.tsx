@@ -15,7 +15,7 @@ const Footer = () => {
 
           <Link to="/" className="text-base sm:text-lg">Home</Link>
           <Link to="/location" className="text-base sm:text-lg">Location</Link>
-          <Link to="/showcase" className="text-base sm:text-lg">Showcase</Link>
+          <Link to="/gallery" className="text-base sm:text-lg">Gallery</Link>
           <Link to="/order" className="text-base sm:text-lg">Order</Link>
         </div>
 
