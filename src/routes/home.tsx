@@ -39,14 +39,8 @@ const Home = () => {
 
 
   return (
-    <div id="home-container" className="
-      flex flex-col w-full h-full pt-10
-      sm:items-center
-    ">
-      <div id="hero" className="
-        grid grid-rows-[auto,1fr] h-[60%] px-10 center-size
-        sm:grid-cols-2 sm:grid-rows-1 sm:h-[680px] sm:items-center sm:justify-items-center
-      ">
+    <div id="home-container" className="main-container">
+      <div id="hero" className="main-hero">
         <div id="hero-stack" className="
           flex flex-col text-center items-center gap-5
         ">
@@ -67,7 +61,7 @@ const Home = () => {
       ">
         <span className="
           px-5 py-5 self-center
-          text-xl text-center font-semibold
+          text-2xl text-center font-semibold
           sm:w-[40%]
         ">We've served the community for over 20 years making quality, classic cakes for parties, weddings, and more!</span>
         <Carousel 

@@ -1,6 +1,8 @@
 const Showcase = () => {
   return (
-    <p className="text-center">Showcase</p>
+    <div className="main-container">
+      
+    </div>
   )
 }
 

@@ -6,9 +6,22 @@
   .background-img {
     @apply bg-main-background-img bg-no-repeat bg-center bg-cover opacity-70;
   }
+
+  .main-container {
+    @apply flex flex-col w-full h-full pt-10 sm:items-center;
+  }
   
   .center-size {
     @apply min-w-0 max-w-[1160px];
+  }
+
+  .main-hero {
+    @apply grid grid-rows-[auto,1fr] h-[60%] px-10 center-size
+    sm:grid-cols-2 sm:grid-rows-1 sm:h-[680px] sm:items-center sm:justify-items-center;
+  }
+
+  .show-stack {
+    @apply flex flex-col text-center items-center;
   }
 
   .link-underline::after {
