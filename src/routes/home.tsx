@@ -73,7 +73,7 @@ const Home = () => {
         <Carousel 
           className="mt-5 sm:mt-12"
           slideSize="30%" 
-          slideGap="xl"
+          slideGap={isMobile ? -75 : "sm"}
           slidesToScroll={2}
           align="start"
           withIndicators
