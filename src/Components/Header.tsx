@@ -14,7 +14,7 @@ const Header = () => {
           text-2xl text-nowrap"
         >Meet Cake Bakery</Link>
 
-        <div className="w-52"></div>
+        <div className="w-96"></div>
 
         <div className="
           flex flex-row px-5 my-2 gap-5"
