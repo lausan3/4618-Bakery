@@ -13,7 +13,8 @@ export default {
       fontFamily: {
         sans: ['Montserrat'],
         'tc': ['Noto Sans TC'],
-        'zh': ['Noto Sans SC']
+        'zh': ['Noto Sans SC'],
+        'script': ['Meow Script']
       },
       colors: {
         'main-color': '#07e342',

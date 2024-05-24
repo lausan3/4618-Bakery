@@ -10,9 +10,15 @@ const Header = () => {
         flex flex-col items-center gap-y-1
         sm:flex-row sm:center-size"
       >
-        <Link to="/" className="
-          text-2xl text-nowrap"
-        >Meet Cake Bakery</Link>
+        <Link to="/" id="logo" className="flex flex-col items-center">
+          <div id="top-section" className="flex flex-row justify-center">
+            <strong className="font-tc text-4xl">遇見</strong>
+            <strong className="font-script text-3xl self-center">Meet</strong>
+          </div>
+          <span id="bottom-section" className="
+            text-2xl text-nowrap"
+          >4618 Bakery</span>
+        </Link>
 
         <div className="w-96"></div>
 
