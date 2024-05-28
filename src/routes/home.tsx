@@ -30,7 +30,7 @@ const Home = () => {
         <Carousel.Slide key={url}>
           <Image 
             src={url}
-            style={{ height: isMobile ? '110px' : '500px', objectFit: 'contain'}}
+            style={{ height: isMobile ? '250px' : '500px', objectFit: 'contain'}}
           />
         </Carousel.Slide>
       )
@@ -55,23 +55,23 @@ const Home = () => {
       </div>
 
       <div id="carousel" className="
-        flex flex-col  py-8 mt-10 bg-gray-300
+        flex flex-col py-2 mt-6 bg-gray-300
         shadow-2xl z-[2]
-        sm:center-size sm:min-w-full sm:h-fit
+        sm:center-size sm:min-w-full
       ">
         <span className="
           px-5 py-5 self-center
-          text-2xl text-center font-semibold
-          sm:w-[40%]
+          text-lg text-center font-semibold
+          sm: sm:w-[40%] sm:text-2xl
         ">We've served the community for over 20 years making quality, classic cakes for parties, weddings, and more!</span>
         <Carousel 
-          className="mt-5 sm:mt-12"
-          slideSize="30%" 
+          className="sm:my-12"
+          height={250}
+          slideSize={isMobile ? "50%" : "30%"}
           slideGap="sm"
           slidesToScroll={2}
           align="start"
           withIndicators
-          dragFree
           controlSize={isMobile ? 26 : 50}
         >
           {slides}

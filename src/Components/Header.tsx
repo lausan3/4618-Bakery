@@ -23,8 +23,8 @@ const Header = () => {
         <div className="w-96"></div>
 
         <div className="
-          flex flex-row px-5 my-2 gap-5 w-full
-          sm: justify-end"
+          flex flex-row px-5 my-2 gap-5 w-full justify-center
+          sm:justify-end"
         >
           <Link to="/location" className="text-xl link-underline">Location</Link>
           <Link to="/gallery" className="text-xl link-underline">Gallery</Link>
