@@ -1,6 +1,9 @@
+import { Grid, Image } from '@mantine/core'
+import { useMediaQuery } from '@mantine/hooks';
+
 const Gallery = () => {
-  const images = [
-    './',
+  const urls = [
+    // './IMG_2763.HEIC',
     './IMG_6042.PNG',
     './IMG_6043.PNG',
     './IMG_6044.PNG',
@@ -19,10 +22,35 @@ const Gallery = () => {
     './IMG_1155.PNG',
   ];
 
-  return (
+  const isMobile = useMediaQuery(`(max-width: 640px)`);
+  
+  const images = urls.map((url) => {
+    return (
+      <Grid.Col 
+        className="p-0"
+        span={isMobile ? 6 : 3}
+      >
+        <Image 
+          className="object-fill"
+          src={url} 
+        />
+      </Grid.Col>
+    )
+  });
 
+  // https://mantine.dev/core/grid/
+  return (
     <div className="main-container">
       <span className="text-xl text-center px-5">Welcome to the Gallery! Here's a showcase of the many cakes we've done in the past.</span>
+
+      <Grid
+        className="
+          my-5 p-5
+        "
+        gutter="sm"
+      >
+        {images}
+      </Grid>
     </div>
   )
 }
