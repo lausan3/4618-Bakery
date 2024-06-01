@@ -62,16 +62,17 @@ const Home = () => {
         <span className="
           px-5 py-5 self-center
           text-lg text-center font-semibold
-          sm: sm:w-[40%] sm:text-2xl
+          sm:w-[40%] sm:text-2xl
         ">We've served the community for over 20 years making quality, classic cakes for parties, weddings, and more!</span>
         <Carousel 
           className="sm:my-12"
-          height={250}
-          slideSize={isMobile ? "50%" : "30%"}
+          height={isMobile ? 250 : 500}
+          slideSize={isMobile ? "50%" : "33%"}
           slideGap="sm"
           slidesToScroll={2}
           align="start"
           withIndicators
+          loop
           controlSize={isMobile ? 26 : 50}
         >
           {slides}
