@@ -1,6 +1,4 @@
-import { Carousel } from "@mantine/carousel"
-import { Image } from "@mantine/core";
-import { useMediaQuery } from "@mantine/hooks";
+import { Carousel } from "antd"
 import { Link } from "react-router-dom"
 
 const Home = () => {
@@ -23,16 +21,13 @@ const Home = () => {
     './IMG_1155.PNG',
   ];
 
-  const isMobile = useMediaQuery(`(max-width: 640px)`);
-
-  const slides = images.map( (url) => {
+  const slides = images.map( (url, index) => {
       return (
-        <Carousel.Slide key={url}>
-          <Image 
-            src={url}
-            style={{ height: isMobile ? '250px' : '500px', objectFit: 'contain'}}
-          />
-        </Carousel.Slide>
+        <img
+          key={index}
+          src={url}
+          className="sm:h-[700px] object-contain"
+        />
       )
     }
   )
@@ -54,26 +49,22 @@ const Home = () => {
         />
       </div>
 
-      <div id="carousel" className="
-        flex flex-col py-2 mt-6 bg-gray-300
+      <div 
+        id="carousel" 
+        className="
+        flex flex-col py-2 mt-6 bg-gray-300 w-full
         shadow-2xl z-[2]
-        sm:center-size sm:min-w-full
-      ">
+        sm:center-size sm:min-w-full"
+      >
         <span className="
-          px-5 py-5 self-center
-          text-lg text-center font-semibold
+          p-5 self-center
+          text-lg text-center font-semibold w-[80%]
           sm:w-[40%] sm:text-2xl
         ">We've served the community for over 20 years making quality, classic cakes for parties, weddings, and more!</span>
         <Carousel 
-          className="sm:my-12"
-          height={isMobile ? 250 : 500}
-          slideSize={isMobile ? "50%" : "33%"}
-          slideGap="sm"
-          slidesToScroll={2}
-          align="start"
-          withIndicators
-          loop
-          controlSize={isMobile ? 26 : 50}
+          className="p-24 w-full sm:p-8"
+          arrows
+          autoplay
         >
           {slides}
         </Carousel>
