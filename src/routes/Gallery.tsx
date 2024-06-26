@@ -41,7 +41,7 @@ const Gallery = () => {
 
   return (
     <div className="main-container">
-      <span className="text-xl text-center p-8">Welcome to the Gallery! Here's a showcase of the many cakes we've done in the past.</span>
+      <span className="text-xl text-center mt-8 p-8">Welcome to the Gallery! Here's a showcase of the many cakes we've done in the past.</span>
 
       {
         isMobile ?

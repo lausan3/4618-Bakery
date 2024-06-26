@@ -8,7 +8,7 @@
   }
 
   .main-container {
-    @apply flex flex-col w-full h-full pt-10 sm:items-center;
+    @apply flex flex-col w-full h-full sm:items-center;
   }
   
   .center-size {
@@ -37,6 +37,22 @@
 
   .link-underline:hover::after {
     transform: scaleX(1);
+  }
+
+  .form-input {
+    @apply p-4 rounded-xl bg-gray-200 border-2;
+  }
+
+  .form-input:hover {
+    @apply border-slate-700 transition-[border] duration-300;
+  }
+
+  .form-input:focus {
+    @apply border-slate-700 outline-none;
+  }
+
+  .form-item-container {
+    @apply flex flex-col gap-y-2 w-full;
   }
 }
 
