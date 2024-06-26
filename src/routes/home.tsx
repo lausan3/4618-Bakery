@@ -14,11 +14,17 @@ const Home = () => {
     './IMG_6053.PNG',
     './IMG_6054.PNG',
     './IMG_6055.PNG',
-    './_com.apple.Pasteboard.Aydaf0.PNG',
-    './_com.apple.Pasteboard.Pa3lOk.PNG',
-    './_com.apple.Pasteboard.S9ZbU9.PNG',
-    './_com.apple.Pasteboard.tfHHHi.PNG',
-    './IMG_1155.PNG',
+    './IMG_2736.png',
+    './IMG_2741.png',
+    './IMG_2752.png',
+    './IMG_2764.png',
+    './IMG_2773.png',
+    './IMG_2774.png',
+    './IMG_2786.png',
+    './IMG_2855.png',
+    './IMG_2859.png',
+    './IMG_3607.png',
+    './IMG_4625.png',
   ];
 
   const slides = images.map( (url, index) => {
@@ -26,7 +32,7 @@ const Home = () => {
         <img
           key={index}
           src={url}
-          className="sm:h-[700px] object-contain"
+          className="sm:h-[700px] object-contain rounded-xl"
         />
       )
     }
@@ -52,12 +58,12 @@ const Home = () => {
       <div 
         id="carousel" 
         className="
-        flex flex-col py-2 mt-6 bg-gray-300 w-full
+        flex flex-col p-4 mt-6 bg-gray-300 w-full
         shadow-2xl z-[2]
         sm:center-size sm:min-w-full"
       >
         <span className="
-          p-5 self-center
+          p-8 self-center
           text-lg text-center font-semibold w-[80%]
           sm:w-[40%] sm:text-2xl
         ">We've served the community for over 20 years making quality, classic cakes for parties, weddings, and more!</span>
