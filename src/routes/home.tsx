@@ -57,7 +57,7 @@ const Home = () => {
       <div 
         id="carousel" 
         className="
-        flex flex-col p-4 mt-6 bg-gray-300 w-full
+        flex flex-col p-4 mt-16 bg-gray-300 w-full
         shadow-2xl z-[2]
         sm:center-size sm:min-w-full"
       >
