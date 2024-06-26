@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const Footer = () => {
   return (
     <footer className="
-      flex flex-row justify-center w-full bg-main-color py-8
+      flex flex-row justify-center w-full bg-brand py-8
     ">
       <div id="grid" className="
         grid grid-rows-auto w-1/4 h-[90%] gap-y-10
