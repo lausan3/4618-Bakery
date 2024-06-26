@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const Header = () => {
   return (
     <header className="
-      flex flex-row justify-center items-center w-full px-10 py-8 bg-main-color
+      flex flex-row justify-center items-center w-full px-10 py-8 bg-brand
       shadow-2xl z-[2]
     ">
       <div className="

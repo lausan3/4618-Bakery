@@ -7,9 +7,6 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'main-background-img': "url('/background.JPG')",
-      },
       fontFamily: {
         sans: ['Montserrat'],
         'tc': ['Noto Sans TC'],
@@ -17,8 +14,7 @@ export default {
         'script': ['Meow Script']
       },
       colors: {
-        'main-color': '#07e342',
-        'section-bg': "gray-500",
+        'brand': '#07e342',
       }
     },
   },

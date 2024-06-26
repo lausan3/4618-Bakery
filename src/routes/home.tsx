@@ -17,7 +17,6 @@ const Home = () => {
     './IMG_2736.png',
     './IMG_2741.png',
     './IMG_2752.png',
-    './IMG_2764.png',
     './IMG_2773.png',
     './IMG_2774.png',
     './IMG_2786.png',
@@ -47,7 +46,7 @@ const Home = () => {
         ">
           <span className="text-3xl font-semibold">Custom-Made Cakes for any Occasion.</span>
           <span className="text-xl">We provide cakes made-to-order for your event</span>
-          <Link className="px-4 py-2 bg-main-color rounded-lg font-semibold" to="/order">Contact Us</Link>
+          <Link className="px-4 py-2 bg-brand rounded-lg font-semibold" to="/order">Contact Us</Link>
         </div>
         <img src="./IMG_0003.PNG" alt="Showcase Cake" className="
           p-10

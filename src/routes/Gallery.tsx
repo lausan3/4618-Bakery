@@ -17,7 +17,6 @@ const Gallery = () => {
     './IMG_2736.png',
     './IMG_2741.png',
     './IMG_2752.png',
-    './IMG_2764.png',
     './IMG_2773.png',
     './IMG_2774.png',
     './IMG_2786.png',
@@ -25,6 +24,7 @@ const Gallery = () => {
     './IMG_2859.png',
     './IMG_3607.png',
     './IMG_4625.png',
+    './IMG_5861.png',
   ];
 
   const isMobile = useMediaQuery(`(max-width: 640px)`);
