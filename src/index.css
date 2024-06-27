@@ -7,8 +7,16 @@
     @apply bg-main-background-img bg-no-repeat bg-center bg-cover opacity-70;
   }
 
+  .outer-container {
+    @apply flex flex-col h-screen items-center;
+  }
+
+  .inner-container {
+    @apply flex w-full flex-grow justify-center;
+  }
+
   .main-container {
-    @apply flex flex-col w-full h-full sm:items-center;
+    @apply flex flex-col w-full h-full flex-grow sm:items-center;
   }
   
   .center-size {
@@ -104,11 +112,11 @@
   }
 
   .hero-stack-heading {
-    @apply text-5xl font-semibold;
+    @apply text-4xl sm:text-5xl font-semibold;
   }
 
   .hero-stack-subheading {
-    @apply text-3xl;
+    @apply text-2xl sm:text-3xl;
   }
 
   .hero-stack-call-to-action {
@@ -148,11 +156,11 @@
   }
 
   .visit-us-text-stack {
-    @apply flex flex-col items-center text-center gap-y-8 p-8 pb-0 sm:p-8;
+    @apply flex flex-col items-center text-center gap-y-8 p-8;
   }
 
   .english-chinese-stack {
-    @apply flex flex-col;
+    @apply flex flex-col px-4;
   }
 
   .email {
@@ -160,7 +168,7 @@
   }
 
   .qrcode {
-    @apply w-1/2 p-8;
+    @apply sm:w-1/2 p-8;
   }
 }
 
