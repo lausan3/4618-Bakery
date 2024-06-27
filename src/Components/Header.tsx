@@ -2,33 +2,26 @@ import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
-    <header className="
-      flex flex-row justify-center items-center w-full px-10 py-8 bg-brand
-      shadow-2xl z-[2]
-    ">
-      <div className="
-        flex flex-col items-center gap-y-1 w-full px-10
-        sm:flex-row sm:center-size"
-      >
-        <Link to="/" id="logo" className="flex flex-col items-center">
-          <div id="top-section" className="flex flex-row justify-center">
-            <strong className="font-tc text-4xl">遇見</strong>
-            <strong className="font-script text-3xl self-center">Meet</strong>
+    <header className="header-container">
+      <div className="logo-container">
+        <Link to="/" className="logo">
+
+          <div className="logo-top-container">
+            <strong className="logo-top-chinese">遇見</strong>
+            <strong className="logo-top-english">Meet</strong>
           </div>
-          <span id="bottom-section" className="
-            text-2xl text-nowrap"
-          >4618 Bakery</span>
+
+          <span className="logo-bottom">4618 Bakery</span>
+
         </Link>
 
-        <div className="w-96"></div>
+        <div className="header-spacer"></div>
 
-        <div className="
-          flex flex-row px-5 my-2 gap-5 w-full justify-center
-          sm:justify-end"
+        <div className="header-directory-container"
         >
-          <Link to="/location" className="text-xl link-underline">Location</Link>
-          <Link to="/gallery" className="text-xl link-underline">Gallery</Link>
-          <Link to="/order" className="text-xl link-underline">Order</Link>
+          <Link to="/location" className="header-directory-item">Location</Link>
+          <Link to="/gallery" className="header-directory-item">Gallery</Link>
+          <Link to="/order" className="header-directory-item">Order</Link>
         </div>
       </div>
     </header>

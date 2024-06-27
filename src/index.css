@@ -59,6 +59,46 @@
     @apply flex flex-col gap-y-2 w-full;
   }
 
+  .header-container {
+    @apply flex flex-row justify-center items-center w-full px-10 py-8 bg-brand shadow-2xl z-[2];
+  }
+
+  .logo-container {
+    @apply flex flex-col items-center gap-y-1 w-full px-10 sm:flex-row sm:center-size;
+  }
+
+  .logo {
+    @apply flex flex-col items-center;
+  }
+
+  .logo-top-container {
+    @apply flex flex-row justify-center;
+  }
+
+  .logo-top-chinese {
+    @apply font-tc text-4xl;
+  }
+
+  .logo-top-english {
+    @apply font-script text-3xl self-center;
+  }
+
+  .logo-bottom {
+    @apply text-2xl text-nowrap;
+  }
+
+  .header-spacer {
+    @apply w-96;
+  }
+
+  .header-directory-container {
+    @apply flex flex-row px-5 my-2 gap-5 w-full justify-center sm:justify-end;
+  }
+
+  .header-directory-item {
+    @apply text-xl link-underline;
+  }
+
   .hero-stack {
     @apply flex flex-col text-center items-center gap-5;
   }
