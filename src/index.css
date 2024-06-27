@@ -138,6 +138,22 @@
   .carousel-image {
     @apply sm:h-[700px] object-contain rounded-xl;
   }
+
+  .g-map-text-container {
+    @apply flex flex-col sm:flex-row;
+  }
+
+  .g-map-container {
+    @apply w-full h-[500px];
+  }
+
+  .visit-us-text-stack {
+    @apply flex flex-col items-center text-center gap-y-8 p-8 pb-0 sm:p-8;
+  }
+
+  .english-chinese-stack {
+    @apply flex flex-col;
+  }
 }
 
 #root {
