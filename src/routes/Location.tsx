@@ -14,7 +14,7 @@ const Location = () => {
               className="w-full h-full"
               loading="lazy"
               allowFullScreen 
-              src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJIQhG6stawokRhodYMao8d6M&key=${googleApiKey}`}
+              src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJIQhG6stawokRhodYMao8d6M&key=${googleApiKey || "AIzaSyBFBfv9HNZdqUevH0aMRkaR8GYC8zV5SHs"}`}
             />
           </div>
 
