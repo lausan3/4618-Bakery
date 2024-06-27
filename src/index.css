@@ -104,7 +104,7 @@
   }
 
   .header-directory-item {
-    @apply text-xl link-underline;
+    @apply text-2xl link-underline;
   }
 
   .footer-container {
