@@ -170,6 +170,22 @@
   .qrcode {
     @apply sm:w-1/2 p-8;
   }
+
+  .gallery-heading {
+    @apply px-8;
+  }
+
+  .mobile-masonry {
+    @apply flex flex-col p-8 gap-y-4;
+  }
+
+  .masonry {
+    @apply p-8;
+  }
+
+  .masonry-image {
+    @apply rounded-lg w-full;
+  }
 }
 
 #root {

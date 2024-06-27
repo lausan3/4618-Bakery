@@ -34,7 +34,7 @@ const Gallery = () => {
       <img
         key={index}
         src={url}
-        className="rounded-lg w-full"
+        className="masonry-image"
       />
     )
   })
@@ -43,18 +43,18 @@ const Gallery = () => {
     <div className="main-container">
       <div className="page-container">
 
-        <span>Welcome to the Gallery! Here's a showcase of the many cakes we've done in the past.</span>
+        <span className="gallery-heading">Welcome to the Gallery! Here's a showcase of the many cakes we've done in the past.</span>
         {
           isMobile ?
-          <div className="flex flex-col p-8 gap-y-4">
+            <div className="mobile-masonry">
               {masonItems}
             </div>
           :
-          <Masonry
-          columnsCount={2}
-          gutter="1rem"
-          className="p-8"
-          >
+            <Masonry
+              className="masonry"
+              columnsCount={2}
+              gutter="1rem"
+            >
               {masonItems}
             </Masonry>
         }
