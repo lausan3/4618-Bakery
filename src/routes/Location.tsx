@@ -27,7 +27,7 @@ const Location = () => {
             <div className="english-chinese-stack text-2xl">
 
               <span>We have a wide variety of pre-made cakes, Chinese buns, and drinks.</span>
-              <span className="font-tc">我哋有各種各樣嘅預製蛋糕、中式包子同嘢飲。</span>
+              <span className="font-tc">我哋有各種各樣嘅預製蛋糕、中式包子同飲品。</span>
             </div>
           </div>
         </div>
