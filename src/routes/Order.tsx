@@ -26,7 +26,7 @@ const Order = () => {
 
   return (
     <div className="main-container">
-      <div id="contact-text-container" className="flex flex-col gap-y-4 p-8 items-center text-xl">
+      <div id="contact-text-container" className="page-container gap-y-4">
         <span className="">Know what kind of cake you want for your next event? Send us the details!</span>
         <span className="font-tc">告诉我们您想要的蛋糕和直径，我们将为您制作</span>
         <span className="">To order, add us on WeChat or send an email to 4618bakery@gmail.com</span>

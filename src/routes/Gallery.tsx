@@ -41,22 +41,24 @@ const Gallery = () => {
 
   return (
     <div className="main-container">
-      <span className="text-xl text-center mt-8 p-8">Welcome to the Gallery! Here's a showcase of the many cakes we've done in the past.</span>
+      <div className="page-container">
 
-      {
-        isMobile ?
+        <span>Welcome to the Gallery! Here's a showcase of the many cakes we've done in the past.</span>
+        {
+          isMobile ?
           <div className="flex flex-col p-8 gap-y-4">
-            {masonItems}
-          </div>
-        :
+              {masonItems}
+            </div>
+          :
           <Masonry
-            columnsCount={2}
-            gutter="1rem"
-            className="p-8"
+          columnsCount={2}
+          gutter="1rem"
+          className="p-8"
           >
-            {masonItems}
-          </Masonry>
-      }
+              {masonItems}
+            </Masonry>
+        }
+      </div>
     </div>
   )
 }

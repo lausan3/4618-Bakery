@@ -54,6 +54,10 @@
   .form-item-container {
     @apply flex flex-col gap-y-2 w-full;
   }
+
+  .page-container {
+    @apply flex flex-col my-8 p-8 items-center text-xl;
+  }
 }
 
 #root {
