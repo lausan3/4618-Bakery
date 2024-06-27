@@ -4,24 +4,42 @@ const Location = () => {
   return (
     <div className="main-container">
       <div className="page-container">
-        <div id="g-map-text-container" className="flex flex-row items-center">
-          <iframe 
-            width="600" 
-            height="450" 
-            loading="lazy"
-            allowFullScreen 
-            src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJIQhG6stawokRhodYMao8d6M&key=${googleApiKey}`}
-          />
+        <div id="g-map-text-container" className="flex flex-col sm:flex-row">
+          <div 
+            id="g-map-container" 
+            className="w-full h-[500px]"
+          >
 
-          <div id="visit-us-text-stack" className="flex flex-col p-8 items-center text-center gap-y-8">
+            <iframe 
+              className="w-full h-full"
+              loading="lazy"
+              allowFullScreen 
+              src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJIQhG6stawokRhodYMao8d6M&key=${googleApiKey}`}
+            />
+          </div>
 
-            <span
-              className="w-1/2 text-3xl"
-            >Come visit us at 4618 8th Avenue in Brooklyn, New York!</span>
+          <div id="visit-us-text-stack" className="flex flex-col items-center text-center gap-y-8 p-8 pb-0 sm:p-8">
 
-            <span
-              className="w-1/2 text-2xl"
-            >We have a wide variety of pre-made cakes, Chinese buns, and drinks.</span>
+            <div className="flex flex-col">
+
+              <span
+                className="text-3xl"
+              >Come visit us at 4618 8th Avenue in Brooklyn, New York!</span>
+              <span
+                className="text-3xl"
+              >歡迎來到紐約布魯克林第八大道 4618 號拜訪我們！</span>
+              
+            </div>
+
+            <div className="flex flex-col">
+
+              <span
+                className="text-2xl"
+              >We have a wide variety of pre-made cakes, Chinese buns, and drinks.</span>
+              <span
+                className="text-2xl"
+              >我哋有各種各樣嘅預製蛋糕、中式包子同嘢飲。</span>
+            </div>
           </div>
         </div>
 

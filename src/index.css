@@ -21,7 +21,7 @@
   }
 
   .show-stack {
-    @apply flex flex-col text-center items-center;
+    @apply flex flex-col items-center justify-center;
   }
 
   .link-underline::after {
