@@ -26,23 +26,22 @@ const Order = () => {
 
   return (
     <div className="main-container">
-      <div id="contact-text-container" className="page-container gap-y-8">
+      <div id="contact-text-container" className="page-container gap-y-8 text-center">
 
-        <div className="flex flex-col text-center">
+        <div className="english-chinese-stack">
 
-          <span className="">Know what kind of cake you want for your next event? Send us the details!</span>
+          <span>Know what kind of cake you want for your next event? Send us the details!</span>
           <span className="font-tc">知道下次活動想要哪種蛋糕嗎？請向我們發送詳細資訊！</span>
         </div>
 
-        <div className="flex flex-col text-center">
+        <div className="english-chinese-stack">
 
-          <span className="">To order, add us on WeChat or send an email to <span className="text-purple-800 underline">4618bakery@gmail.com</span>.</span>
-          <span className="font-tc">如需訂購，請新增我們的微信或發送電子郵件至 <span className="text-purple-800 underline">4618bakery@gmail.com</span>.</span>
+          <span>To order, add us on WeChat or send an email to <span className="email">4618bakery@gmail.com</span>.</span>
+          <span className="font-tc">如需訂購，請新增我們的微信或發送電子郵件至 <span className="email font-sans">4618bakery@gmail.com</span>.</span>
         </div>
 
         <img 
-          id="qrcode"
-          className="w-1/2"
+          className="qrcode"
           src="./../../QRCode.JPEG"
         />
       </div>

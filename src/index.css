@@ -154,6 +154,14 @@
   .english-chinese-stack {
     @apply flex flex-col;
   }
+
+  .email {
+    @apply text-purple-800 underline;
+  }
+
+  .qrcode {
+    @apply w-1/2 p-8;
+  }
 }
 
 #root {
