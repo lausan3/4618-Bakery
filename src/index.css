@@ -33,7 +33,7 @@
   }
   
   .show-stack {
-    @apply flex flex-col items-center justify-center;
+    @apply flex flex-col items-center justify-center gap-4 sm:gap-1;
   }
 
   .link-underline::after {
@@ -105,6 +105,30 @@
 
   .header-directory-item {
     @apply text-xl link-underline;
+  }
+
+  .footer-container {
+    @apply flex flex-row justify-center w-full bg-brand py-8;
+  }
+
+  .directory-text {
+    @apply text-xl font-semibold;
+  }
+
+  .directory-container {
+    @apply flex flex-row text-center;
+  }
+
+  .directory-left-container {
+    @apply flex flex-col gap-x-8 pr-8;
+  }
+
+  .directory-right-container {
+    @apply flex flex-col gap-x-8;
+  }
+
+  .directory-item {
+    @apply text-base sm:text-lg;
   }
 
   .hero-stack {

@@ -2,29 +2,27 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
-    <footer className="
-      flex flex-row justify-center w-full bg-brand py-8
-    ">
+    <footer className="footer-container">
       {/* <div id="grid" className="
         grid grid-rows-auto w-1/4 h-[90%] gap-y-10
         sm:grid-cols-2 sm:grid-rows-1
       "> */}
 
-        <div className="show-stack gap-4 sm:gap-1">
-          <span className="text-xl font-semibold">Directory</span>
+        <div className="show-stack">
+          <span className="directory-text">Directory</span>
 
-          <div className="flex flex-row">
+          <div className="directory-container">
 
-            <div className="flex flex-col gap-x-8 pr-8">
+            <div className="directory-left-container">
 
-              <Link to="/" className="text-base sm:text-lg">Home</Link>
-              <Link to="/gallery" className="text-base sm:text-lg">Gallery</Link>
+              <Link to="/" className="directory-item">Home</Link>
+              <Link to="/gallery" className="directory-item">Gallery</Link>
             </div>
 
-            <div className="flex flex-col gap-x-8">
+            <div className="directory-right-container">
 
-              <Link to="/location" className="text-base sm:text-lg">Location</Link>
-              <Link to="/order" className="text-base sm:text-lg">Order</Link>
+              <Link to="/location" className="directory-item">Location</Link>
+              <Link to="/order" className="directory-item">Order</Link>
             </div>
 
           </div>
