@@ -31,53 +31,42 @@ const Home = () => {
         <img
           key={index}
           src={url}
-          className="sm:h-[700px] object-contain rounded-xl"
+          className="carousel-image"
         />
       )
     }
   )
-
-
+  
+  
   return (
     <div id="home-container" className="main-container">
-      <div id="hero" className="main-hero">
-        <div id="hero-stack" className="
-          flex flex-col text-center items-center gap-5
-        ">
-          <span className="text-5xl font-semibold">Custom-Made Cakes for any Occasion.</span>
-          <span className="text-3xl">We provide cakes made-to-order for your event</span>
-          <Link className="px-4 py-2 text-xl bg-brand rounded-lg font-semibold" to="/order">Contact Us</Link>
+      <div className="page-container w-full">
+
+        <div id="hero" className="main-hero">
+          <div id="hero-stack" className="hero-stack">
+            <span className="hero-stack-heading">Custom-Made Cakes for any Occasion.</span>
+            <span className="hero-stack-subheading">We provide cakes made-to-order for your event</span>
+            <Link className="hero-stack-call-to-action" to="/order">Contact Us</Link>
+          </div>
+          <img src="./IMG_0003.PNG" alt="Showcase Cake" className="hero-image"/>
         </div>
-        <img src="./IMG_0003.PNG" alt="Showcase Cake" className="
-          p-10
-          sm:w-[60%] sm:object-contain sm:p-0"
-        />
-      </div>
 
-      <div 
-        id="carousel" 
-        className="
-        flex flex-col p-4 mt-16 bg-gray-300 w-full
-        shadow-2xl z-[2]
-        sm:center-size sm:min-w-full"
-      >
-        <span className="
-          p-4 self-center
-          text-lg text-center font-semibold w-[80%]
-          sm:w-[40%] sm:text-2xl
-        ">We've served the community for over 20 years making quality, classic cakes for parties, weddings, and more!</span>
-
-        <span 
-          className="text-xl text-center"
-        >Here's a preview of our work</span>
-
-        <Carousel 
-          className="p-24 w-full sm:p-8"
-          arrows
-          autoplay
+        <div 
+          id="carousel" 
+          className="carousel-container"
         >
-          {slides}
-        </Carousel>
+          <span className="carousel-heading">We've served the community for over 20 years making quality, classic cakes for parties, weddings, and more!</span>
+
+          <span className="carousel-label">Here's a preview of our work</span>
+
+          <Carousel 
+            className="carousel"
+            arrows
+            autoplay
+          >
+            {slides}
+          </Carousel>
+        </div>
       </div>
     </div>
   )
