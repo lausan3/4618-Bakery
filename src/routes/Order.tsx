@@ -1,3 +1,6 @@
+import { useState } from "react";
+import EmailForm from "../Components/EmailForm";
+
 const Order = () => {
   // const [formData, setFormData] = useState<
   //   {name: string | null, email: string | null, subject: string | null, body: string | null}>({name: null, email: null, subject: null, body: null});
@@ -11,6 +14,7 @@ const Order = () => {
   //   }
     
   //   const mailService = MailService.getInstance();
+  //   mailService.createConnection();
   //   await mailService.sendMail('X-Request-Id',
   //     {
   //       from: formData.email,
